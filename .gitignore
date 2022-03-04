@@ -1,0 +1,5 @@
+/vendor
+/.vscode
+/config/config.php
+/config/app.php
+.env

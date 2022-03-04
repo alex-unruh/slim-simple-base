@@ -1,0 +1,31 @@
+{
+  "name": "alex-unruh/slim-base",
+  "description": "A simple start point built on Slim Framework minimal installation",
+  "type": "project",
+  "require": {
+    "slim/slim": "^4.9",
+    "slim/psr7": "^1.5",
+    "slim/php-view": "^3.1",
+    "doctrine/dbal": "^3.3",
+    "vlucas/phpdotenv": "^5.4",
+    "alex-unruh/dot-notation-config": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "authors": [
+    {
+      "name": "Alexandre Unruh",
+      "email": "alexandre@unruh.com.br"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/",
+      "core\\": "core/"
+    }
+  },
+  "scripts": {
+    "serve": "php -S localhost:8000 -t public"
+  }
+}
